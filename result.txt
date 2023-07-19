@@ -1,0 +1,96 @@
+제목        : array에서 특정 값 찾아서 바꾸는데 걸리는 시간 : ARRAY     : 999
+start       : 1689732623551
+end         : 1689732623551
+총 걸린 시간 : 0
+제목        : array에서 특정 값 찾아서 바꾸는데 걸리는 시간 : ARRAYLIST : 999
+start       : 1689732623553
+end         : 1689732623554
+총 걸린 시간 : 1
+제목        : forEach, Stream, for 문 속도 비교 : No1. for  : ARRAY
+start       : 1689732623556
+end         : 1689732623557
+총 걸린 시간 : 1
+제목        : forEach, Stream, for 문 속도 비교 : No1. for  : ARRAYLIST
+start       : 1689732623560
+end         : 1689732623561
+총 걸린 시간 : 1
+제목        : forEach, Stream, for 문 속도 비교 : No2. forEach : ARRAY
+start       : 1689732623562
+end         : 1689732623564
+총 걸린 시간 : 2
+제목        : forEach, Stream, for 문 속도 비교 : No2. forEach : ARRAYLIST
+start       : 1689732623566
+end         : 1689732623569
+총 걸린 시간 : 3
+제목        : array에서 특정 값 찾아서 바꾸는데 걸리는 시간 : ARRAY     : 999
+start       : 1689732648062
+end         : 1689732648062
+총 걸린 시간 : 0
+제목        : array에서 특정 값 찾아서 바꾸는데 걸리는 시간 : ARRAYLIST : 999
+start       : 1689732648064
+end         : 1689732648064
+총 걸린 시간 : 0
+제목        : forEach, Stream, for 문 속도 비교 : No1. for  : ARRAY
+start       : 1689732648066
+end         : 1689732648067
+총 걸린 시간 : 1
+제목        : forEach, Stream, for 문 속도 비교 : No1. for  : ARRAYLIST
+start       : 1689732648068
+end         : 1689732648069
+총 걸린 시간 : 1
+제목        : forEach, Stream, for 문 속도 비교 : No2. forEach : ARRAY
+start       : 1689732648071
+end         : 1689732648072
+총 걸린 시간 : 1
+제목        : forEach, Stream, for 문 속도 비교 : No2. forEach : ARRAYLIST
+start       : 1689732648073
+end         : 1689732648075
+총 걸린 시간 : 2
+제목        : array에서 특정 값 찾아서 바꾸는데 걸리는 시간 : ARRAY     : 999
+start       : 1689733014322
+end         : 1689733014322
+총 걸린 시간 : 0
+제목        : array에서 특정 값 찾아서 바꾸는데 걸리는 시간 : ARRAYLIST : 999
+start       : 1689733014324
+end         : 1689733014324
+총 걸린 시간 : 0
+제목        : forEach, Stream, for 문 속도 비교 : No1. for  : ARRAY
+start       : 1689733014327
+end         : 1689733014327
+총 걸린 시간 : 0
+제목        : forEach, Stream, for 문 속도 비교 : No1. for  : ARRAYLIST
+start       : 1689733014329
+end         : 1689733014331
+총 걸린 시간 : 2
+제목        : forEach, Stream, for 문 속도 비교 : No2. forEach : ARRAY
+start       : 1689733014333
+end         : 1689733014333
+총 걸린 시간 : 0
+제목        : forEach, Stream, for 문 속도 비교 : No2. forEach : ARRAYLIST
+start       : 1689733014335
+end         : 1689733014337
+총 걸린 시간 : 2
+제목        : array에서 특정 값 찾아서 바꾸는데 걸리는 시간 : ARRAY     : 999
+start       : 1689733189238
+end         : 1689733189238
+총 걸린 시간 : 0
+제목        : array에서 특정 값 찾아서 바꾸는데 걸리는 시간 : ARRAYLIST : 999
+start       : 1689733189241
+end         : 1689733189242
+총 걸린 시간 : 1
+제목        : forEach, Stream, for 문 속도 비교 : No1. for  : ARRAY
+start       : 1689733189243
+end         : 1689733189244
+총 걸린 시간 : 1
+제목        : forEach, Stream, for 문 속도 비교 : No1. for  : ARRAYLIST
+start       : 1689733189245
+end         : 1689733189246
+총 걸린 시간 : 1
+제목        : forEach, Stream, for 문 속도 비교 : No2. forEach : ARRAY
+start       : 1689733189249
+end         : 1689733189249
+총 걸린 시간 : 0
+제목        : forEach, Stream, for 문 속도 비교 : No2. forEach : ARRAYLIST
+start       : 1689733189252
+end         : 1689733189254
+총 걸린 시간 : 2
