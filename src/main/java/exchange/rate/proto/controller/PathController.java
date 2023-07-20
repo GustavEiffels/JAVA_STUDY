@@ -3,53 +3,39 @@ package exchange.rate.proto.controller;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.List;
 
 import javax.net.ssl.HttpsURLConnection;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import exchange.rate.proto.DailyDataService;
+
+
 
 @Controller
 public class PathController 
 {
 
+    @Autowired
+    private DailyDataService dailyDataService;
    
     @GetMapping("/invoice")
     public @ResponseBody String invoiceAPI()
     {
-        String                      status                  = "DONE";
-        String                      url                     = "API";
-        String                      defaultLine             ;
-        try 
-        {
-            URL                     apiUrl                  = new URL(url);
-            HttpsURLConnection      connection              = (HttpsURLConnection) apiUrl.openConnection();
-            connection.setRequestMethod("GET");    
+        return dailyDataService.InvoiceGetExchangeRateAPI();
+    }
 
-            BufferedReader          bReader                 = new BufferedReader(new InputStreamReader( connection.getInputStream() ));
-            
-            while(true)
-            {
-                                    defaultLine             = bReader.readLine();
-                if(defaultLine == null ) break;
-                else
-                {
-                    System.out.println(defaultLine);
-                }
-            }
+    @GetMapping("/today")
+    public @ResponseBody String getToday()
+    {
 
-        } 
-        catch (Exception e) 
-        {
-            status = "FAIL";
-            e.getStackTrace();
-        }
-        finally
-        {
-            return status;
-        }
-        
+        return new Date().toString();
     }
 
 }
