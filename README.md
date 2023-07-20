@@ -3,3 +3,4 @@
 --
 
 1. 0.0.1 : spring security 적용 , api test 
+2. 0.0.2 : jwt 토큰 적용 , database 에 데이터 저장 완료, joinform , loginform 생성 완료 !
