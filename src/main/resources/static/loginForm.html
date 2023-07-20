@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN FORM</title>
+</head>
+<body>
+
+    <h1> H! </h1>
+    
+    <form >
+        <div> <input type="text" id="loginEmail" name="loginEmail"> </div>
+        <div> <input type="password" id="loginPassword" name="loginPassword"> </div>
+
+        <button type="submit" id="button">button</button>
+    </form>
+
+</body>
+<script>
+    const button = document.getElementById('button').addEventListener('click', () => {
+        const email = document.getElementById('loginEmail').value;
+        const password = document.getElementById('loginPassword').value;
+
+        fetch("http://localhost:8080/login",
+        {
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify({
+                loginEmail:email,
+                loginPassword:password
+            }),
+            
+        }
+        ).then((Response) => console.log(Response));
+    });
+</script>
+</html>

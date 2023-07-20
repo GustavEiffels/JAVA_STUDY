@@ -1,4 +1,4 @@
-package exchange.rate.proto.model;
+package exchange.rate.proto.model.entity;
 
 import java.sql.Timestamp;
 import java.util.UUID;

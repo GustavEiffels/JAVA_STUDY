@@ -1,10 +1,13 @@
-package exchange.rate.proto.model;
+package exchange.rate.proto.model.dto;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
+/**
+ *  FOR GETTING DATA FROM API INVOICE
+ */
 public class ResultApi 
 {
 

@@ -1,22 +1,47 @@
 package exchange.rate.proto.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+
+import exchange.rate.proto.config.auth.AuthenticationManagerSetting;
+import exchange.rate.proto.config.auth.CorsConfig;
 
 @Configuration
 @EnableWebSecurity
 public class SpringSecurityConfig 
 {
+
+    @Autowired
+    private  CorsConfig config;
+
+    public class MyCustomDsl extends AbstractHttpConfigurer<MyCustomDsl, HttpSecurity> {
+		@Override
+		public void configure(HttpSecurity http) throws Exception {
+			AuthenticationManager authenticationManager = http.getSharedObject(AuthenticationManager.class);
+			http
+                .addFilter(config.corsFilter())
+                .addFilter(new AuthenticationManagerSetting(authenticationManager));
+		}
+
+	}
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception
     {
         return http
-                    .csrf(      csrf  -> csrf.disable()  )
+                    .csrf().disable()
                     .formLogin( login -> login.disable() )
                     .httpBasic( basic -> basic.disable() )
+                    .apply(new MyCustomDsl())
+                    .and()
                     .authorizeRequests( (auth) -> {
                         auth
                             .antMatchers("/admin/**").access("hasRole('ROLE_ADMIN')")
@@ -24,4 +49,10 @@ public class SpringSecurityConfig
                     })
         .build();
     }    
+
+    @Bean 
+    public PasswordEncoder passwordEncoder() { return new BCryptPasswordEncoder(); }
+
+
+    
 }
