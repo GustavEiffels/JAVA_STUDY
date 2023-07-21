@@ -39,7 +39,6 @@ public class AuthenticationManagerSetting extends UsernamePasswordAuthentication
             ObjectMapper                            mapper                          = new ObjectMapper();
                                                                                     request.setCharacterEncoding("UTF-8");
             UserAuth                                auth                            = mapper.readValue(request.getInputStream(),UserAuth.class);
-            
             UsernamePasswordAuthenticationToken     token                           = new UsernamePasswordAuthenticationToken(auth.getLoginEmail(), auth.getLoginPassword());
 
             log.info("Authentication Token", token);
@@ -66,20 +65,10 @@ public class AuthenticationManagerSetting extends UsernamePasswordAuthentication
                                                                                                     .withExpiresAt(new Date(System.currentTimeMillis()+60000*10))
                                                                                                     .withClaim("loginEmail", principalDetails.getUsername())
                                                                                                     .sign(Algorithm.HMAC512("IAMKING"));
-
             log.info("jwtTokenString : "+jwtTokenString);
             response.addHeader("Authorization", "Bearer "+jwtTokenString);       
         } 
-        catch (Exception e) 
-        {
-            log.info("jwtTokenString Error : ", e.getMessage());
-        }
+        catch (Exception e) {  log.info("jwtTokenString Error : ", e.getMessage()); }
     }
-
-
-    
-
-
-    
     
 }

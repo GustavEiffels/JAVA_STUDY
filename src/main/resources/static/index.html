@@ -9,6 +9,26 @@
     <h2> choose option </h2>
     
 
+    <button id="post" >
+        post
+    </button>
+
     
 </body>
+
+<script>
+
+    const postBtn  = document.getElementById('post').addEventListener('click',()=>{
+
+        fetch("http://localhost:8080/admin/did",{
+
+            headers:
+            {
+                
+                "Authorization":"Baerer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJsb2dpbkVtYWlsIjoib25lIiwic3ViIjoia2V5IiwiZXhwIjoxNjg5OTI2NjY5fQ.6qn32vHo4YGyRDnYj19NL5iqThYmNN186wbs604oxbs3yp1yfGqIX2gLCZznZ1L0iMrSonfExmWU4J9B9kaYdQ"
+            }
+        }).then((result)=>{ console.log(result)});
+    })
+
+</script>
 </html>
