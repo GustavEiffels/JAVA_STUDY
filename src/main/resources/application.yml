@@ -1,9 +1,10 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: siuki
+    # username: siuki
+    username: ENC(rn0xMirEjCSgWRv8ZmLrfw==)
     url: jdbc:mysql://localhost:3306/exchangeRate
-    password: Ssw0304!
+    password: ENC(0AY4b2lsxyVIiZCyU8o9ldUzIjeaX0M/)
   jpa:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:

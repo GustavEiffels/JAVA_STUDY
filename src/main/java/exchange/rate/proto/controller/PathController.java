@@ -26,9 +26,12 @@ public class PathController
     }
 
     @GetMapping("/joinProc")
-    public String joinForm() { return "joinForm.html"; }
+    public String joinForm()        { return "joinForm.html";           }
 
     @GetMapping("/loginProc")
-    public String loginForm() { return "loginForm.html"; }
+    public String loginForm()       { return "loginForm.html";          }
+
+    @GetMapping("/loginSuccessFull")
+    public String loginSuccess()    { return "loginSuccessFull.html";   }
 
 }

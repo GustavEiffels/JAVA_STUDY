@@ -12,7 +12,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
 import exchange.rate.proto.config.auth.AuthenticationManagerSetting;
+import exchange.rate.proto.config.auth.AuthorizationManagerSetting;
 import exchange.rate.proto.config.auth.CorsConfig;
+import exchange.rate.proto.repository.UserAuthRepository;
 
 @Configuration
 @EnableWebSecurity
@@ -22,13 +24,18 @@ public class SpringSecurityConfig
     @Autowired
     private  CorsConfig config;
 
+    @Autowired
+    private UserAuthRepository userAuthRepository;
+
+
     public class MyCustomDsl extends AbstractHttpConfigurer<MyCustomDsl, HttpSecurity> {
 		@Override
 		public void configure(HttpSecurity http) throws Exception {
 			AuthenticationManager authenticationManager = http.getSharedObject(AuthenticationManager.class);
 			http
                 .addFilter(config.corsFilter())
-                .addFilter(new AuthenticationManagerSetting(authenticationManager));
+                .addFilter(new AuthenticationManagerSetting(authenticationManager))
+                .addFilter(new AuthorizationManagerSetting(authenticationManager, userAuthRepository));
 		}
 
 	}

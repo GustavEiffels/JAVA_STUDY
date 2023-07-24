@@ -43,7 +43,12 @@ public class AuthorizationManagerSetting  extends BasicAuthenticationFilter
         Optional<String>            getAuthorization            = Optional.ofNullable(request.getHeader("Authorization")); 
         String                      jwtTokenValue               = null;
 
-        if( getAuthorization.isPresent() ) return;
+        log.info(" get Authorization Value : {}", getAuthorization.isPresent());
+        if( !getAuthorization.isPresent() )
+        {
+            chain.doFilter(request, response);
+            return;
+        }
         
         /**
          log - request Url Checking
@@ -63,7 +68,11 @@ public class AuthorizationManagerSetting  extends BasicAuthenticationFilter
                                                                                         .getClaim("loginEmail")
                                                                                         .asString() );
         
-        if( !userAuth.isPresent() ) return;
+        if( !userAuth.isPresent() ) 
+        {
+            chain.doFilter(request, response);
+            return;
+        }
 
         PrincipalDetails            principalDetails            = new PrincipalDetails(userAuth.get());
         Authentication              authentication              = new UsernamePasswordAuthenticationToken(principalDetails, null ,principalDetails.getAuthorities());
