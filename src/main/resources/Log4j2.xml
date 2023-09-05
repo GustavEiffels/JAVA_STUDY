@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+
+    <!-- 해당 설정파일에서 사용하는 프로퍼티-->
+    <Properties>
+        <property name="LOGS_PATH">C:\Users\SIUK\OneDrive\바탕 화면\TOY\BACK\JAVA\recordingRandD\howtolog\</property>
+    </Properties>
+
+    <Appenders>
+        <!-- 콘솔 -->
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss}:%-3relative] %-5level %logger{35} - %msg%n" />
+        </Console>
+
+        <!-- INFO -->
+        <RollingFile name ="RollingFile_INFO">
+
+            <FileName>${LOGS_PATH}/logs/${date:yyyy}/${date:MM}/${date:dd}/info/dailyLog_${date:yyyy}-${date:MM}-${date:dd}-${date:HH}.log</FileName>
+            <FilePattern>${LOGS_PATH}/logs/${date:yyyy}/${date:MM}/${date:dd}/info/dailyLog_%d{yyyy-MM-dd-HH}.log</FilePattern>
+
+            <PatternLayout>
+                <charset>UTF-8</charset>
+                <Pattern>[%d{yyyy-MM-dd HH:mm:ss}:%-3relative] [%-5level %logger{35}] - %msg%n</Pattern>
+            </PatternLayout>
+
+            <Policies>
+                <SizeBasedTriggeringPolicy size="100MB"/>
+                <TimeBasedTriggeringPolicy interval = "1" modulate = "true"/>/
+            </Policies>
+
+            <Filters>
+                <!-- INFO 레벨 필터 -->
+                <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+
+        </RollingFile>
+
+        <!-- DEBUG -->
+        <RollingFile name ="RollingFile_DEBUG">
+
+            <FileName>${LOGS_PATH}/logs/${date:yyyy}/${date:MM}/${date:dd}/debug/dailyLog_${date:yyyy}-${date:MM}-${date:dd}-${date:HH}.log</FileName>
+            <FilePattern>${LOGS_PATH}/logs/${date:yyyy}/${date:MM}/${date:dd}/debug/dailyLog_%d{yyyy-MM-dd-HH}.log</FilePattern>
+
+            <PatternLayout>
+                <charset>UTF-8</charset>
+                <Pattern>[%d{yyyy-MM-dd HH:mm:ss}:%-3relative] [%-5level %logger{35}] - %msg%n</Pattern>
+            </PatternLayout>
+
+            <Policies>
+                <SizeBasedTriggeringPolicy size="100MB"/>
+                <TimeBasedTriggeringPolicy interval = "1" modulate = "true"/>/
+            </Policies>
+
+        </RollingFile>
+
+      <!-- ERROR  -->
+        <RollingFile name ="RollingFile_ERROR">
+
+            <FileName>${LOGS_PATH}/logs/${date:yyyy}/${date:MM}/${date:dd}/error/dailyLog_${date:yyyy}-${date:MM}-${date:dd}-${date:HH}.log</FileName>
+            <FilePattern>${LOGS_PATH}/logs/${date:yyyy}/${date:MM}/${date:dd}/error/dailyLog_%d{yyyy-MM-dd-HH}.log</FilePattern>
+
+            <PatternLayout>
+                <charset>UTF-8</charset>
+                <Pattern>[%d{yyyy-MM-dd HH:mm:ss}:%-3relative] [%-5level %logger{35}] - %msg%n</Pattern>
+            </PatternLayout>
+
+            <Policies>
+                <SizeBasedTriggeringPolicy size="100MB"/>
+                <TimeBasedTriggeringPolicy interval = "1" modulate = "true"/>/
+            </Policies>
+            <Filters>
+                <!-- ERROR 레벨 필터 -->
+                <ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+        </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+
+        <logger name="com.test.api.service" level="INFO" additivity="false">
+            <AppenderRef ref="console" />
+            <AppenderRef ref="RollingFile_INFO" />
+        </logger>
+
+        
+        <logger name="com.test.api.service" level="ERROR">
+            <AppenderRef ref="console" />
+            <AppenderRef ref="RollingFile_ERROR" />
+        </logger>
+
+        <Root level="DEBUG">
+            <AppenderRef ref="console" />
+            <AppenderRef ref="RollingFile_INFO" />
+            <AppenderRef ref="RollingFile_ERROR" />
+            <AppenderRef ref="RollingFile_DEBUG" />
+        </Root>
+
+    </Loggers>
+</Configuration>

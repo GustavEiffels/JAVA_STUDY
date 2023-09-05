@@ -1,0 +1,141 @@
+[2023-09-05 16:23:16:149397] [INFO  com.develop.howtolog.HowtologApplication] - Starting HowtologApplication using Java 11.0.2 on DESKTOP-442CDMN with PID 29148 (C:\Users\SIUK\OneDrive\바탕 화면\TOY\BACK\JAVA\recordingRandD\howtolog\bin\main started by SIUK in C:\Users\SIUK\OneDrive\바탕 화면\TOY\BACK\JAVA\recordingRandD\howtolog)
+[2023-09-05 16:23:16:149400] [INFO  com.develop.howtolog.HowtologApplication] - No active profile set, falling back to 1 default profile: "default"
+[2023-09-05 16:23:16:149773] [INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+[2023-09-05 16:23:16:149776] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:23:16:149777] [INFO  org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[2023-09-05 16:23:16:149778] [INFO  org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.79]
+[2023-09-05 16:23:16:149808] [INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[2023-09-05 16:23:16:149811] [INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 406 ms
+[2023-09-05 16:23:16:150077] [INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+[2023-09-05 16:23:16:150085] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:23:16:150088] [INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-09-05 16:23:16:150260] [INFO  com.develop.howtolog.HowtologApplication] - Started HowtologApplication in 0.923 seconds (JVM running for 150.305)
+[2023-09-05 16:23:16:150264] [INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+[2023-09-05 16:23:26:159696] [INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-09-05 16:23:26:159697] [INFO  org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[2023-09-05 16:23:26:159701] [INFO  org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 3 ms
+[2023-09-05 16:23:26:159702] [INFO  com.develop.howtolog.PathController] - 부부젤라
+[2023-09-05 16:23:26:159703] [ERROR com.develop.howtolog.PathController] - 에러만
+[2023-09-05 16:24:41:234965] [INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[2023-09-05 16:24:41:235057] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:24:41:235057] [INFO  org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+[2023-09-05 16:24:41:235060] [INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+[2023-09-05 16:24:41:235067] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:24:41:235072] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:24:41:235163] [INFO  com.develop.howtolog.HowtologApplication] - Starting HowtologApplication using Java 11.0.2 on DESKTOP-442CDMN with PID 29148 (C:\Users\SIUK\OneDrive\바탕 화면\TOY\BACK\JAVA\recordingRandD\howtolog\bin\main started by SIUK in C:\Users\SIUK\OneDrive\바탕 화면\TOY\BACK\JAVA\recordingRandD\howtolog)
+[2023-09-05 16:24:41:235166] [INFO  com.develop.howtolog.HowtologApplication] - No active profile set, falling back to 1 default profile: "default"
+[2023-09-05 16:24:42:235489] [INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+[2023-09-05 16:24:42:235491] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:24:42:235493] [INFO  org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[2023-09-05 16:24:42:235494] [INFO  org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.79]
+[2023-09-05 16:24:42:235517] [INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[2023-09-05 16:24:42:235518] [INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 347 ms
+[2023-09-05 16:24:42:235732] [INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+[2023-09-05 16:24:42:235739] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:24:42:235742] [INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-09-05 16:24:42:235846] [INFO  com.develop.howtolog.HowtologApplication] - Started HowtologApplication in 0.734 seconds (JVM running for 235.89)
+[2023-09-05 16:24:42:235848] [INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+[2023-09-05 16:24:53:246337] [INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[2023-09-05 16:24:53:246422] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:24:53:246423] [INFO  org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+[2023-09-05 16:24:53:246425] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:24:53:246429] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:24:53:246518] [INFO  com.develop.howtolog.HowtologApplication] - Starting HowtologApplication using Java 11.0.2 on DESKTOP-442CDMN with PID 29148 (C:\Users\SIUK\OneDrive\바탕 화면\TOY\BACK\JAVA\recordingRandD\howtolog\bin\main started by SIUK in C:\Users\SIUK\OneDrive\바탕 화면\TOY\BACK\JAVA\recordingRandD\howtolog)
+[2023-09-05 16:24:53:246520] [INFO  com.develop.howtolog.HowtologApplication] - No active profile set, falling back to 1 default profile: "default"
+[2023-09-05 16:24:53:246780] [INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+[2023-09-05 16:24:53:246781] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:24:53:246783] [INFO  org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[2023-09-05 16:24:53:246784] [INFO  org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.79]
+[2023-09-05 16:24:53:246808] [INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[2023-09-05 16:24:53:246809] [INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 285 ms
+[2023-09-05 16:24:53:247013] [INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+[2023-09-05 16:24:53:247021] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:24:53:247024] [INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-09-05 16:24:53:247148] [INFO  com.develop.howtolog.HowtologApplication] - Started HowtologApplication in 0.685 seconds (JVM running for 247.194)
+[2023-09-05 16:24:53:247151] [INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+[2023-09-05 16:25:16:269810] [INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[2023-09-05 16:25:16:269887] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:25:16:269888] [INFO  org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+[2023-09-05 16:25:16:269896] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:25:16:269902] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:25:16:269988] [INFO  com.develop.howtolog.HowtologApplication] - Starting HowtologApplication using Java 11.0.2 on DESKTOP-442CDMN with PID 29148 (C:\Users\SIUK\OneDrive\바탕 화면\TOY\BACK\JAVA\recordingRandD\howtolog\bin\main started by SIUK in C:\Users\SIUK\OneDrive\바탕 화면\TOY\BACK\JAVA\recordingRandD\howtolog)
+[2023-09-05 16:25:16:269990] [INFO  com.develop.howtolog.HowtologApplication] - No active profile set, falling back to 1 default profile: "default"
+[2023-09-05 16:25:16:270280] [INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+[2023-09-05 16:25:16:270281] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:25:16:270282] [INFO  org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[2023-09-05 16:25:16:270283] [INFO  org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.79]
+[2023-09-05 16:25:16:270295] [INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[2023-09-05 16:25:16:270297] [INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 304 ms
+[2023-09-05 16:25:17:270527] [INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+[2023-09-05 16:25:17:270536] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:25:17:270545] [INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-09-05 16:25:17:270671] [INFO  com.develop.howtolog.HowtologApplication] - Started HowtologApplication in 0.734 seconds (JVM running for 270.717)
+[2023-09-05 16:25:17:270673] [INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+[2023-09-05 16:25:40:293334] [INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[2023-09-05 16:25:40:293417] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:25:40:293418] [INFO  org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+[2023-09-05 16:25:40:293428] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:25:40:293435] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:25:40:293514] [INFO  com.develop.howtolog.HowtologApplication] - Starting HowtologApplication using Java 11.0.2 on DESKTOP-442CDMN with PID 29148 (C:\Users\SIUK\OneDrive\바탕 화면\TOY\BACK\JAVA\recordingRandD\howtolog\bin\main started by SIUK in C:\Users\SIUK\OneDrive\바탕 화면\TOY\BACK\JAVA\recordingRandD\howtolog)
+[2023-09-05 16:25:40:293516] [INFO  com.develop.howtolog.HowtologApplication] - No active profile set, falling back to 1 default profile: "default"
+[2023-09-05 16:25:40:293710] [INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+[2023-09-05 16:25:40:293712] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:25:40:293712] [INFO  org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[2023-09-05 16:25:40:293713] [INFO  org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.79]
+[2023-09-05 16:25:40:293722] [INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[2023-09-05 16:25:40:293723] [INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 203 ms
+[2023-09-05 16:25:40:293856] [INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+[2023-09-05 16:25:40:293860] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:25:40:293863] [INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-09-05 16:25:40:293989] [INFO  com.develop.howtolog.HowtologApplication] - Started HowtologApplication in 0.516 seconds (JVM running for 294.035)
+[2023-09-05 16:25:40:293991] [INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+[2023-09-05 16:26:10:323404] [INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-09-05 16:26:10:323404] [INFO  org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[2023-09-05 16:26:10:323409] [INFO  org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 5 ms
+[2023-09-05 16:26:15:329051] [INFO  com.develop.howtolog.PathController] - 인포 발생
+[2023-09-05 16:26:43:1189] [INFO  com.develop.howtolog.HowtologApplication] - Starting HowtologApplication using Java 11.0.2 on DESKTOP-442CDMN with PID 2724 (C:\Users\SIUK\OneDrive\바탕 화면\TOY\BACK\JAVA\recordingRandD\howtolog\bin\main started by SIUK in C:\Users\SIUK\OneDrive\바탕 화면\TOY\BACK\JAVA\recordingRandD\howtolog)
+[2023-09-05 16:26:43:1196] [INFO  com.develop.howtolog.HowtologApplication] - No active profile set, falling back to 1 default profile: "default"
+[2023-09-05 16:26:43:1262] [INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-09-05 16:26:43:1263] [INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-09-05 16:26:44:2800] [INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+[2023-09-05 16:26:44:2832] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:26:44:2838] [INFO  org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[2023-09-05 16:26:44:2839] [INFO  org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.79]
+[2023-09-05 16:26:44:2942] [INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[2023-09-05 16:26:44:2944] [INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1679 ms
+[2023-09-05 16:26:45:3691] [INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+[2023-09-05 16:26:45:3713] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:26:45:3742] [INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-09-05 16:26:45:3923] [INFO  com.develop.howtolog.HowtologApplication] - Started HowtologApplication in 3.136 seconds (JVM running for 3.961)
+[2023-09-05 16:26:46:4748] [INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-09-05 16:26:46:4750] [INFO  org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[2023-09-05 16:26:46:4755] [INFO  org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 5 ms
+[2023-09-05 16:26:53:11608] [INFO  com.develop.howtolog.PathController] - 인포 발생
+[2023-09-05 16:27:15:34025] [INFO  com.develop.howtolog.PathController] - 인포 발생
+[2023-09-05 16:27:55:73352] [INFO  com.develop.howtolog.PathController] - 인포 발생
+[2023-09-05 16:28:13:91631] [INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[2023-09-05 16:28:13:91717] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:28:13:91718] [INFO  org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+[2023-09-05 16:28:13:91721] [INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+[2023-09-05 16:28:13:91730] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:28:13:91736] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:28:13:91831] [INFO  com.develop.howtolog.HowtologApplication] - Starting HowtologApplication using Java 11.0.2 on DESKTOP-442CDMN with PID 2724 (C:\Users\SIUK\OneDrive\바탕 화면\TOY\BACK\JAVA\recordingRandD\howtolog\bin\main started by SIUK in C:\Users\SIUK\OneDrive\바탕 화면\TOY\BACK\JAVA\recordingRandD\howtolog)
+[2023-09-05 16:28:13:91833] [INFO  com.develop.howtolog.HowtologApplication] - No active profile set, falling back to 1 default profile: "default"
+[2023-09-05 16:28:13:92153] [INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+[2023-09-05 16:28:13:92155] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:28:13:92156] [INFO  org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[2023-09-05 16:28:13:92157] [INFO  org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.79]
+[2023-09-05 16:28:14:92185] [INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[2023-09-05 16:28:14:92187] [INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 350 ms
+[2023-09-05 16:28:14:92436] [INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+[2023-09-05 16:28:14:92447] [INFO  org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+[2023-09-05 16:28:14:92451] [INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-09-05 16:28:14:92618] [INFO  com.develop.howtolog.HowtologApplication] - Started HowtologApplication in 0.845 seconds (JVM running for 92.657)
+[2023-09-05 16:28:14:92621] [INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+[2023-09-05 16:28:20:98318] [INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-09-05 16:28:20:98319] [INFO  org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[2023-09-05 16:28:20:98323] [INFO  org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 4 ms
+[2023-09-05 16:28:20:98326] [ERROR com.develop.howtolog.PathController] - 에러 발생!
+[2023-09-05 16:28:26:104687] [INFO  com.develop.howtolog.PathController] - 인포 발생
+[2023-09-05 16:28:49:127753] [ERROR com.develop.howtolog.PathController] - 에러 발생!
+[2023-09-05 16:29:06:144673] [INFO  com.develop.howtolog.PathController] - 인포 발생
