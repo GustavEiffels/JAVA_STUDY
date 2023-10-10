@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.ConstraintMode;
 import jakarta.persistence.Entity;
+import jakarta.persistence.ForeignKey;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
@@ -26,6 +28,6 @@ public class Board extends BaseEntity
     private String name;    
 
     @OneToMany
-    @JoinColumn(name = "board_pid")
+    @JoinColumn(name = "board_pid", foreignKey = @ForeignKey(ConstraintMode.NO_CONSTRAINT))
     private List<Post> postes = new ArrayList<>();
 }

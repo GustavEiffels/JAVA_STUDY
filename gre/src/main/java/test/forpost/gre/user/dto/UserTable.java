@@ -3,8 +3,9 @@ package test.forpost.gre.user.dto;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import jakarta.persistence.ForeignKey;
 import jakarta.persistence.Column;
+import jakarta.persistence.ConstraintMode;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -52,23 +53,23 @@ public class UserTable extends BaseEntity
     private Role    role   ;
 
     @OneToMany
-    @JoinColumn(name = "user_table_pid")
+    @JoinColumn(name = "user_table_pid", foreignKey = @ForeignKey(ConstraintMode.NO_CONSTRAINT))
     private List<File> file_list = new ArrayList<>();
 
     @OneToMany
-    @JoinColumn(name = "user_table_pid")
+    @JoinColumn(name = "user_table_pid", foreignKey = @ForeignKey(ConstraintMode.NO_CONSTRAINT))
     private List<ReReply> reReplies = new ArrayList<>();
 
     @OneToMany
-    @JoinColumn(name = "user_table_pid")
+    @JoinColumn(name = "user_table_pid", foreignKey = @ForeignKey(ConstraintMode.NO_CONSTRAINT))
     private List<Reply> replies = new ArrayList<>();
 
     @OneToMany
-    @JoinColumn(name = "user_table_pid")
+    @JoinColumn(name = "user_table_pid", foreignKey = @ForeignKey(ConstraintMode.NO_CONSTRAINT))
     private List<Post> posts = new ArrayList();
 
     @OneToMany
-    @JoinColumn(name = "user_table_pid")
+    @JoinColumn(name = "user_table_pid", foreignKey = @ForeignKey(ConstraintMode.NO_CONSTRAINT))
     private List<Board> boards = new ArrayList<>();
 
 

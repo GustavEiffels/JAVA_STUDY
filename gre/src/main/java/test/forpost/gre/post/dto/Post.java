@@ -6,8 +6,9 @@ import test.forpost.gre.reply.dto.Reply;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import jakarta.persistence.ForeignKey;
 import jakarta.persistence.Column;
+import jakarta.persistence.ConstraintMode;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.Lob;
@@ -33,6 +34,6 @@ public class Post extends BaseEntity
     private String contents;
 
     @OneToMany
-    @JoinColumn(name = "post_pid")
+    @JoinColumn(name = "post_pid", foreignKey = @ForeignKey(ConstraintMode.NO_CONSTRAINT))
     private List<Reply> replies = new ArrayList<>();
 }

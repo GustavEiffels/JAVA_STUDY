@@ -2,11 +2,11 @@ package test.forpost.gre.reply.dto;
 
 import test.forpost.gre.common.entity.BaseEntity;
 import test.forpost.gre.rereply.dto.ReReply;
-
 import java.util.ArrayList;
 import java.util.List;
-
+import jakarta.persistence.ForeignKey;
 import jakarta.persistence.Column;
+import jakarta.persistence.ConstraintMode;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.Lob;
@@ -29,6 +29,6 @@ public class Reply extends BaseEntity
     private String contents;
 
     @OneToMany
-    @JoinColumn(name = "reply_pid")
+    @JoinColumn(name = "reply_pid", foreignKey = @ForeignKey(ConstraintMode.NO_CONSTRAINT))
     private List<ReReply> reReplies = new ArrayList<>();
 }
